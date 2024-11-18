@@ -1,0 +1,406 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Garamond;
+  background-color: #3c2a4d;
+  background-image: linear-gradient(45deg, #211829, #211829);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Home Section Styling */
+.home-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 100px;
+  border-radius: 50px;
+  box-shadow: 0px 4px 12px rgb(116, 80, 244);
+}
+
+.home h1 {
+  font-size: 5.0rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-weight: 600;
+  opacity: 1;
+}
+
+.home p {
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-weight: 100;
+}
+
+.subheading {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: 400;
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .home h1 {
+    font-size: 2rem;
+  }
+
+  .subheading {
+    font-size: 1.5rem;
+  }
+
+  .quote {
+    font-size: 1rem;
+  }
+}
+/* General Styling for About Section */
+.about {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10%;
+}
+
+.about-content {
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Styling for the main content */
+.about-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.about-content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #3120f3;
+}
+
+.about-content p {
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.about-section h2 {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Skills Section */
+.skills {
+  background-color: rgba(0, 0, 0, 0.6);  /* Dark background for contrast */
+  padding: 20px;
+  border: 2px solid #444;
+  border-radius: 10px; /* Rounded corners */
+  margin-top: 20px;  /* Space between about and skills section */
+}
+
+.skills h3 {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.skills ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skills li {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* Separate "About Me" Section */
+.about-section {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border: 2px solid #444;
+  border-radius: 10px;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #fff;
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .about-content h1 {
+    font-size: 2.5rem;
+  }
+
+  .about-content h2 {
+    font-size: 2rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+  }
+
+  .skills h3 {
+    font-size: 1.5rem;
+  }
+
+  .skills li {
+    font-size: 1rem;
+  }
+}
+
+/* Education Section Styling */
+.education-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  padding: 40px; /* Slightly increased padding for better spacing */
+  border-radius: 30px; /* Reduced curve for a sleeker look */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Added subtle shadow for depth */
+}
+
+.education-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+  gap: 20px; /* Reduced gap for compact alignment */
+  max-width: 900px; /* Constrain the section width */
+  width: 100%; /* Ensure responsiveness */
+  height: auto; /* Allow the height to adjust based on content */
+  box-sizing: border-box; /* Include padding in total dimensions */
+  padding: 20px;
+  box-shadow: 0px 4px 12px rgb(84, 118, 253);
+}
+
+.education-details {
+  background-color: rgba(20, 20, 20, 0.95); /* Slightly lighter black for contrast */
+  padding: 15px; /* Increased padding for better content spacing */
+  border-radius: 10px; /* Softer rounded corners */
+  box-shadow: 0px 3px 10px rgba(255, 255, 255, 0.4); /* Adjusted shadow for elegance */
+  border: 3px solid #0077b6; /* Slightly thicker border for emphasis */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover effect */
+}
+
+.education-details:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0px 6px 15px rgba(255, 255, 255, 0.6);
+}
+
+.education-section h2 {
+  grid-column: span 2; /* Center the heading across the grid */
+  font-size: 2.5rem; /* Reduced font size for better balance */
+  margin-bottom: 20px;
+  color: #ffcccc;
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Add subtle shadow for text */
+}
+
+.education-details h3 {
+  font-size: 1.8rem; /* Adjusted font size */
+  margin-bottom: 10px;
+  color: #0077b6;
+}
+
+.education-details p {
+  font-size: 1.1rem; /* Reduced for consistency */
+  color: #cccccc; /* Softer contrast for readability */
+}
+
+
+@media (max-width: 768px) {
+  .education-section h2 {
+    font-size: 2.5rem;
+  }
+
+  .education-details h3 {
+    font-size: 1.8rem;
+  }
+
+  .education-details p {
+    font-size: 1rem;
+  }
+
+  .education-section {
+    grid-template-columns: 1fr;
+  }
+}
+/* Contact Page Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0d1117; /* Dark background */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.contact-container {
+  width: 100%;
+  max-width: 550px; /* Restrict maximum width */
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 4px 12px rgb(188, 55, 250);
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box; /* Include padding in width/height */
+}
+
+.contact-container h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.contact-container p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 10px 0 20px;
+  color: #ffffff;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Stretch form to container width */
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form label {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #0077b6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+  background-color: #005f87;
+  transform: translateY(-2px);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Equal spacing between icons */
+  margin-top: 20px;
+}
+
+.social-icon-image {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon-image:hover {
+  transform: scale(1.1);
+}
+
+.hobbies-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.9);
+  border-radius: 15px;
+  box-shadow: 0px 4px 12px rgb(84, 118, 253);
+  text-align: center;
+}
+
+.hobbies-title {
+  grid-column: span 3;
+  font-size: 2.5rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.hobby {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgb(74, 80, 255);
+  border: 2px solid transparent;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.hobby:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  border-color: #3399ff; /* Add a blue border on hover */
+}
+
+.hobby h3 {
+  font-size: 1.8rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.hobby p {
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hobbies-section {
+    grid-template-columns: 1fr; /* Single column for smaller screens */
+  }
+
+  .hobbies-title {
+    font-size: 2rem;
+  }
+
+  .hobby h3 {
+    font-size: 1.5rem;
+  }
+
+  .hobby p {
+    font-size: 1rem;
+  }
+}
